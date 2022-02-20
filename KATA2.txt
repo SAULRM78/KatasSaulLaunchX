@@ -1,0 +1,55 @@
+Microsoft Windows [Versión 10.0.19042.1526]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\Saulr>python3 -m venv env
+
+C:\Users\Saulr>env\Scripts\activate
+
+(env) C:\Users\Saulr>pip freeze
+
+(env) C:\Users\Saulr>pip install python-dateutil
+Collecting python-dateutil
+  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting six>=1.5
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, python-dateutil
+Successfully installed python-dateutil-2.8.2 six-1.16.0
+WARNING: You are using pip version 21.2.4; however, version 22.0.3 is available.
+You should consider upgrading via the 'C:\Users\Saulr\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) C:\Users\Saulr>pip freeze
+python-dateutil==2.8.2
+six==1.16.0
+
+(env) C:\Users\Saulr>deactivate
+
+C:\Users\Saulr>env\Scripts\python.exe -m pip install --upgrade pip
+Requirement already satisfied: pip in c:\users\saulr\env\lib\site-packages (21.2.4)
+Collecting pip
+  Downloading pip-22.0.3-py3-none-any.whl (2.1 MB)
+     |████████████████████████████████| 2.1 MB 1.1 MB/s
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 21.2.4
+    Uninstalling pip-21.2.4:
+      Successfully uninstalled pip-21.2.4
+Successfully installed pip-22.0.3
+
+C:\Users\Saulr>python3 -m venv env
+
+C:\Users\Saulr>env\Scripts\activate
+
+(env) C:\Users\Saulr>pip freeze
+python-dateutil==2.8.2
+six==1.16.0
+
+(env) C:\Users\Saulr>pip install python-dateutil
+Requirement already satisfied: python-dateutil in c:\users\saulr\env\lib\site-packages (2.8.2)
+Requirement already satisfied: six>=1.5 in c:\users\saulr\env\lib\site-packages (from python-dateutil) (1.16.0)
+
+(env) C:\Users\Saulr>pip freeze
+python-dateutil==2.8.2
+six==1.16.0
+
+(env) C:\Users\Saulr>deactivate
+C:\Users\Saulr>
